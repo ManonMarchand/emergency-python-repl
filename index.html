@@ -72,7 +72,7 @@
       }
 
       async function main() {
-        let indexURL = "{{ PYODIDE_BASE_URL }}";
+        let indexURL = "https://cdn.jsdelivr.net/pyodide/v0.23.2/full/";
         const urlParams = new URLSearchParams(window.location.search);
         const buildParam = urlParams.get("build");
         if (buildParam) {
