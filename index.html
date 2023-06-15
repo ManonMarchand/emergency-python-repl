@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Ice Cream Picker</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+
+    <py-config>
+      packages = ["matplotlib", "pandas", "astropy", "astroquery", "pyvo", "ipyaladin", "numpy"]
+    </py-config>
+
+    <py-script>
+      import micropip
+      
+      await micropip.install("https://github.com/cds-astro/cds-healpix-python/releases/download/v0.6.4/cdshealpix-0.6.4-cp311-cp311-emscripten_3_1_32_wasm32.whl")
+      await micropip.install("https://github.com/cds-astro/mocpy/releases/download/v0.12.3/mocpy-0.12.3-cp310-cp310-emscripten_3_1_27_wasm32.whl")
+      
+
+      
+    </py-script>
+
+    <py-repl>
+      
+    </py-repl>
+  </body>
+</html>
