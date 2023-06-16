@@ -100,7 +100,8 @@
           },
         });
         let namespace = pyodide.globals.get("dict")();
-        await pyodide.loadPackage("micropip, astropy")
+        await pyodide.loadPackage("micropip")
+        await pyodide.loadPackage("astropy")
         pyodide.runPython(
           `
             import sys
