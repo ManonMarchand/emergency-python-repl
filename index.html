@@ -102,8 +102,8 @@
         let namespace = pyodide.globals.get("dict")();
         await pyodide.loadPackage("micropip")
         await pyodide.loadPackage("astropy")
-        await pyodide.loadPackage("https://github.com/cds-astro/cds-healpix-python/releases/download/v0.6.4/cdshealpix-0.6.4-cp311-cp311-emscripten_3_1_32_wasm32.whl")
-        await pyodide.loadPackage("https://github.com/cds-astro/mocpy/releases/download/v0.12.3/mocpy-0.12.3-cp311-cp311-emscripten_3_1_32_wasm32.whl")
+        await pyodide.loadPackage("https://raw.githack.com/cds-astro/jupyterlite/main/content/pyodide/wheels/cdshealpix-0.6.4-cp311-cp311-emscripten_3_1_32_wasm32.whl")
+        await pyodide.loadPackage("https://raw.githack.com/cds-astro/jupyterlite/main/content/pyodide/wheels/mocpy-0.12.3-cp311-cp311-emscripten_3_1_32_wasm32.whl")
         pyodide.runPython(
           `
             import sys
